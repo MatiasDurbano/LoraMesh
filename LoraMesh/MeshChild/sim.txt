@@ -1,0 +1,8 @@
+(rx_timestamp, rssi, snr, sftx, sfrx, tx_trials, tx_power, tx_time_on_air, tx_counter, tx_frequency)
+0, 0, 0.0, 0, 11, 0, 20, 1643, 4, 915000000, 
+simulacion 0
+distancia: 0 datos de nodo vecino:  None
+ paquetes enviados 0 paquetes recibidos 0
+simulacion 1
+distancia: 24 datos de nodo vecino:  None
+ paquetes enviados 0 paquetes recibidos 0
