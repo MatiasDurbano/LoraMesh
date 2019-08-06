@@ -17,7 +17,7 @@ import pycom
 import machine
 
 from loramesh import Loramesh
-from mesh import *
+from Networkmesh import *
 
 pycom.wifi_on_boot(False)
 pycom.heartbeat(False)
@@ -30,7 +30,7 @@ MAC = str(ubinascii.hexlify(lora.mac()))[2:-1]
 print("LoRa MAC: %s"%MAC)
 
 loram = Loramesh(lora)
-mesh= Mesh(loram,MAC,1)
+mesh= NetworkMesh(loram,MAC,1)
 #--------------------------------------------------------------------------------
 # waiting until it connected to Mesh network
 # se queda intentando conectarse y muestra los vecinos

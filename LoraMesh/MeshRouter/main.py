@@ -20,7 +20,7 @@ from lib.Wifi import *
 from lib.Servidor import *
 
 from loramesh import Loramesh
-from mesh import *
+from Networkmesh import *
 
 
 
@@ -41,7 +41,7 @@ print("LoRa MAC: %s"%MAC)
 
 
 loram = Loramesh(lora)
-mesh= Mesh(loram,MAC,1)
+mesh= NetworkMesh(loram,MAC,1)
 #--------------------------------------------------------------------------------
 # waiting until it connected to Mesh network
 # se queda intentando conectarse y muestra los vecinos
